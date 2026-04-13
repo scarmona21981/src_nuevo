@@ -1,0 +1,18 @@
+Running Pressure Analysis at Elevation ~2000m...
+--- Results ---
+Operating Flow: 51.81 L/s
+Operating Head (TDH): 29.45 m
+Static Head: 17.50 m
+
+--- Pressure Profile ---
+Descarga Bomba: Elevation=2003.90m, Head=2031.95m, Pressure=2.75 bar
+Después Singulares: Elevation=2003.90m, Head=2031.95m, Pressure=2.75 bar
+Fin de Tubería: Elevation=2018.90m, Head=2020.00m, Pressure=0.11 bar
+
+[PASS] Pressure looks reasonable.
+
+--- Regression Q=180 L/min ---
+Flow used: 180.0 L/min
+Required head (static+losses): 17.02 m
+[PASS] Required head near 17 m at 180 L/min.
+[PASS] NPSH fail detectado: NPSH insuficiente: NPSHa=6.53 m < NPSHr+Margen=9.50 m.

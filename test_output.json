@@ -1,0 +1,15 @@
+{
+  "Hb": 35.35636834794866,
+  "staticHead": 32,
+  "frictionLoss": 3.2737414907479816,
+  "minorLoss": 0,
+  "velocityHead": 0.08262685720068318,
+  "sections": [
+    {
+      "velocity": 1.2732395447351625,
+      "frictionLoss": 3.2737414907479816,
+      "minorLoss": 0
+    }
+  ],
+  "warnings": []
+}

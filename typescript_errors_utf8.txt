@@ -1,0 +1,57 @@
+﻿src/components/common/ArtifactCalculator.tsx(123,13): error TS2322: Type 'string' is not assignable to type 'number'.
+src/components/common/ArtifactCalculator.tsx(124,13): error TS2322: Type 'string' is not assignable to type 'number'.
+src/components/PropertiesPanel.tsx(226,9): error TS2367: This comparison appears to be unintentional because the types '"pipe" | "pressure_junction" | "wetwell" | "pump" | "pressurepipe" | "chamber"' and '"air_valve"' have no overlap.
+src/components/Workspace.tsx(1843,70): error TS2339: Property 'active' does not exist on type 'AirValveNode'.
+src/components/Workspace.tsx(1848,68): error TS2339: Property 'active' does not exist on type 'AirValveNode'.
+src/hydraulics/model.ts(1,61): error TS2305: Module '"./types"' has no exported member 'VerificationMode'.
+src/hydraulics/model.ts(39,36): error TS2339: Property 'flow' does not exist on type 'PipeVerificationResult'.
+src/hydraulics/model.ts(40,41): error TS2339: Property 'velocity' does not exist on type 'PipeVerificationResult'.
+src/hydraulics/model.ts(41,37): error TS2339: Property 'flowDepth' does not exist on type 'PipeVerificationResult'.
+src/hydraulics/model.ts(50,13): error TS2353: Object literal may only specify known properties, and 'depths' does not exist in type 'GravityResults'.
+src/hydraulics/test.ts(53,61): error TS2339: Property 'timestamp' does not exist on type 'GravityResults'.
+src/hydraulics/test.ts(56,53): error TS2339: Property 'links' does not exist on type 'GravityResults'.
+src/hydraulics/test.ts(58,29): error TS18046: 'link' is of type 'unknown'.
+src/hydraulics/test.ts(59,29): error TS18046: 'link' is of type 'unknown'.
+src/hydraulics/test.ts(60,32): error TS18046: 'link' is of type 'unknown'.
+src/hydraulics/test.ts(61,30): error TS18046: 'link' is of type 'unknown'.
+src/hydraulics/test.ts(62,38): error TS18046: 'link' is of type 'unknown'.
+src/hydraulics/test.ts(66,53): error TS2339: Property 'nodes' does not exist on type 'GravityResults'.
+src/hydraulics/test.ts(67,53): error TS18046: 'node' is of type 'unknown'.
+src/scripts/verify_air_valve.ts(75,5): error TS2353: Object literal may only specify known properties, and 'hasAirValve' does not exist in type 'PressureJunction'.
+src/scripts/verify_air_valve.ts(86,5): error TS2353: Object literal may only specify known properties, and 'hasAirValve' does not exist in type 'PressureJunction'.
+src/scripts/verify_air_valve.ts(96,5): error TS2353: Object literal may only specify known properties, and 'hasAirValve' does not exist in type 'PressureJunction'.
+src/scripts/verify_air_valve.ts(123,27): error TS2339: Property 'airState' does not exist on type 'PressureJunction'.
+src/tests/integration_pressure_network.ts(32,5): error TS2353: Object literal may only specify known properties, and 'userDefinedId' does not exist in type 'WetWell'.
+src/tests/integration_pressure_network.ts(50,44): error TS2339: Property 'userDefinedId' does not exist on type 'WetWell'.
+src/tests/integration_pressure_network.ts(64,5): error TS2353: Object literal may only specify known properties, and 'userDefinedId' does not exist in type 'Pump'.
+src/tests/integration_pressure_network.ts(76,39): error TS2339: Property 'userDefinedId' does not exist on type 'Pump'.
+src/tests/integration_pressure_network.ts(84,5): error TS2353: Object literal may only specify known properties, and 'userDefinedId' does not exist in type 'PressurePipe'.
+src/tests/integration_pressure_network.ts(107,56): error TS2339: Property 'userDefinedId' does not exist on type 'PressurePipe'.
+src/tests/integration_pressure_network.ts(171,13): error TS18048: 'verification.surgeAnalysis' is possibly 'undefined'.
+src/tests/integration_pressure_network.ts(174,47): error TS18048: 'verification.surgeAnalysis' is possibly 'undefined'.
+src/tests/integration_pressure_network.ts(175,47): error TS18048: 'verification.surgeAnalysis' is possibly 'undefined'.
+src/tests/integration_pressure_network.ts(176,49): error TS18048: 'verification.surgeAnalysis' is possibly 'undefined'.
+src/tests/integration_pressure_network.ts(176,90): error TS18048: 'verification.surgeAnalysis' is possibly 'undefined'.
+src/tests/integration_pressure_network.ts(177,47): error TS18048: 'verification.surgeAnalysis' is possibly 'undefined'.
+src/tests/integration_pressure_network.ts(178,47): error TS18048: 'verification.surgeAnalysis' is possibly 'undefined'.
+src/tests/repro_pressure_issue.ts(50,14): error TS7006: Parameter 'msg' implicitly has an 'any' type.
+src/tests/test_air_valves.ts(2,27): error TS2459: Module '"../hydraulics/airValveModule"' declares 'AirValveRecommendation' locally, but it is not exported.
+src/tests/test_air_valves.ts(8,5): error TS2741: Property 'chainage' is missing in type '{ location: string; elevation: number; head: number; pressure: number; }' but required in type 'PressurePoint'.
+src/tests/test_air_valves.ts(11,5): error TS2741: Property 'chainage' is missing in type '{ location: string; elevation: number; head: number; pressure: number; }' but required in type 'PressurePoint'.
+src/tests/test_air_valves.ts(12,5): error TS2741: Property 'chainage' is missing in type '{ location: string; elevation: number; head: number; pressure: number; }' but required in type 'PressurePoint'.
+src/tests/test_air_valves.ts(13,5): error TS2741: Property 'chainage' is missing in type '{ location: string; elevation: number; head: number; pressure: number; }' but required in type 'PressurePoint'.
+src/tests/test_air_valves.ts(16,5): error TS2741: Property 'chainage' is missing in type '{ location: string; elevation: number; head: number; pressure: number; }' but required in type 'PressurePoint'.
+src/tests/test_air_valves.ts(17,5): error TS2741: Property 'chainage' is missing in type '{ location: string; elevation: number; head: number; pressure: number; }' but required in type 'PressurePoint'.
+src/tests/test_air_valves.ts(18,5): error TS2741: Property 'chainage' is missing in type '{ location: string; elevation: number; head: number; pressure: number; }' but required in type 'PressurePoint'.
+src/tests/test_air_valves.ts(21,5): error TS2741: Property 'chainage' is missing in type '{ location: string; elevation: number; head: number; pressure: number; }' but required in type 'PressurePoint'.
+src/tests/test_geometry.ts(64,32): error TS2345: Argument of type '(Chamber | { CT: { value: number; origin: string; }; id: string; userDefinedId: string; x: number; y: number; H: AttributeValue; Cre: AttributeValue; ... 11 more ...; uehInputMethod?: "manual" | ... 1 more ... | undefined; })[]' is not assignable to parameter of type 'Chamber[]'.
+  Type 'Chamber | { CT: { value: number; origin: string; }; id: string; userDefinedId: string; x: number; y: number; H: AttributeValue; Cre: AttributeValue; ... 11 more ...; uehInputMethod?: "manual" | ... 1 more ... | undefined; }' is not assignable to type 'Chamber'.
+    Type '{ CT: { value: number; origin: string; }; id: string; userDefinedId: string; x: number; y: number; H: AttributeValue; Cre: AttributeValue; ... 11 more ...; uehInputMethod?: "manual" | "artifact"; }' is not assignable to type 'Chamber'.
+      The types of 'CT.origin' are incompatible between these types.
+        Type 'string' is not assignable to type '"calculated" | "manual"'.
+src/tests/test_pressure_hydraulics.ts(15,47): error TS2305: Module '"../hydraulics/pumpModule"' has no exported member 'createSystemCurve'.
+src/tests/test_pressure_hydraulics.ts(143,24): error TS2554: Expected 6-8 arguments, but got 5.
+src/utils/visualizationUtils.ts(87,31): error TS2339: Property 'velocities' does not exist on type 'Results'.
+  Property 'velocities' does not exist on type 'PressureResults'.
+src/utils/visualizationUtils.ts(102,41): error TS2339: Property 'manningResult' does not exist on type 'PipeVerificationResult | PressureVerificationResult'.
+  Property 'manningResult' does not exist on type 'PressureVerificationResult'.

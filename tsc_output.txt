@@ -1,0 +1,9 @@
+src/components/ResultsDock.tsx(564,15): error TS2741: Property '"SIN CAUDAL"' is missing in type '{ APTO: number; 'NO APTO': number; CONDICIONAL: number; INFO: number; 'FUERA ALCANCE': number; 'APTO CON OBSERVACI\u00D3N': number; INCOMPLETO: number; NO_APTO: number; }' but required in type 'Record<StatusType, number>'.
+src/components/ResultsView.tsx(39,7): error TS2739: Type '{ 'NO APTO': number; CONDICIONAL: number; 'APTO CON OBSERVACI\u00D3N': number; INFO: number; APTO: number; 'FUERA ALCANCE': number; }' is missing the following properties from type 'Record<StatusType, number>': INCOMPLETO, NO_APTO, "SIN CAUDAL"
+src/components/Workspace.tsx(1463,17): error TS2353: Object literal may only specify known properties, and 'currentY' does not exist in type 'ZoomSelection | ((prevState: ZoomSelection | null) => ZoomSelection | null)'.
+src/components/Workspace.tsx(2101,68): error TS2551: Property 'currentY' does not exist on type 'ZoomSelection'. Did you mean 'currentX'?
+src/components/Workspace.tsx(2102,68): error TS2551: Property 'currentY' does not exist on type 'ZoomSelection'. Did you mean 'currentX'?
+src/components/Workspace.tsx(2173,77): error TS2551: Property 'currentY' does not exist on type 'ZoomSelection'. Did you mean 'currentX'?
+src/components/Workspace.tsx(2175,77): error TS2551: Property 'currentY' does not exist on type 'ZoomSelection'. Did you mean 'currentX'?
+src/components/Workspace.tsx(3549,83): error TS2551: Property 'currentY' does not exist on type 'ZoomSelection'. Did you mean 'currentX'?
+src/components/Workspace.tsx(3551,64): error TS2551: Property 'currentY' does not exist on type 'ZoomSelection'. Did you mean 'currentX'?

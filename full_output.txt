@@ -1,0 +1,24 @@
+=== Testing Air Valve Logic ===
+
+Running: Weak Pump - No Valve
+  Pressure: -0.980681 bar
+  Head (HGL): 32.0000 m
+  Elevation (Z): 42.0000 m
+  Diff (HGL - Z): -10.000000 m
+  Air State: undefined
+Ô£à PASSED
+
+Running: Weak Pump - With Valve
+  Pressure: 0.000000 bar
+  Head (HGL): 42.0000 m
+  Elevation (Z): 42.0000 m
+  Diff (HGL - Z): 0.000000 m
+  Air State: air_intake
+Ô£à PASSED
+
+Running: Strong Pump - With Valve
+  Pressure: -0.000021 bar
+  Head (HGL): 41.9998 m
+  Elevation (Z): 42.0000 m
+  Diff (HGL - Z): -0.000214 m
+  Air State: closed

@@ -1,0 +1,15 @@
+﻿src/components/Workspace.tsx(1556,14): error TS2552: Cannot find name 'showTableExplorer'. Did you mean 'setShowTableExplorer'?
+src/hydraulics/test.ts(53,61): error TS2339: Property 'timestamp' does not exist on type 'Results'.
+src/hydraulics/test.ts(56,53): error TS2339: Property 'links' does not exist on type 'Results'.
+src/hydraulics/test.ts(58,29): error TS18046: 'link' is of type 'unknown'.
+src/hydraulics/test.ts(59,29): error TS18046: 'link' is of type 'unknown'.
+src/hydraulics/test.ts(60,32): error TS18046: 'link' is of type 'unknown'.
+src/hydraulics/test.ts(61,30): error TS18046: 'link' is of type 'unknown'.
+src/hydraulics/test.ts(62,38): error TS18046: 'link' is of type 'unknown'.
+src/hydraulics/test.ts(66,53): error TS2339: Property 'nodes' does not exist on type 'Results'.
+src/hydraulics/test.ts(67,53): error TS18046: 'node' is of type 'unknown'.
+src/tests/test_geometry.ts(64,32): error TS2345: Argument of type '(Chamber | { CT: { value: number; origin: string; }; id: string; userDefinedId: string; x: number; y: number; H: AttributeValue; Cre: AttributeValue; ... 9 more ...; incomingElevations?: { ...; }[] | undefined; })[]' is not assignable to parameter of type 'Chamber[]'.
+  Type 'Chamber | { CT: { value: number; origin: string; }; id: string; userDefinedId: string; x: number; y: number; H: AttributeValue; Cre: AttributeValue; ... 9 more ...; incomingElevations?: { ...; }[] | undefined; }' is not assignable to type 'Chamber'.
+    Type '{ CT: { value: number; origin: string; }; id: string; userDefinedId: string; x: number; y: number; H: AttributeValue; Cre: AttributeValue; ... 9 more ...; incomingElevations?: { pipeId: string; value: number; }[]; }' is not assignable to type 'Chamber'.
+      The types of 'CT.origin' are incompatible between these types.
+        Type 'string' is not assignable to type '"manual" | "calculated"'.

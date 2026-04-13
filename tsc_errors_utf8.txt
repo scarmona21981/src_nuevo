@@ -1,0 +1,44 @@
+﻿src/hydraulics/index.ts(8,1): error TS2308: Module './types' has already exported a member named 'NetworkType'. Consider explicitly re-exporting to resolve the ambiguity.
+src/hydraulics/index.ts(8,1): error TS2308: Module './types' has already exported a member named 'VerificationMode'. Consider explicitly re-exporting to resolve the ambiguity.
+src/hydraulics/test.ts(53,53): error TS2769: No overload matches this call.
+  Overload 1 of 4, '(value: string | number | Date): Date', gave the following error.
+    Argument of type 'string | undefined' is not assignable to parameter of type 'string | number | Date'.
+      Type 'undefined' is not assignable to type 'string | number | Date'.
+  Overload 2 of 4, '(value: string | number): Date', gave the following error.
+    Argument of type 'string | undefined' is not assignable to parameter of type 'string | number'.
+      Type 'undefined' is not assignable to type 'string | number'.
+src/hydraulics/test.ts(56,45): error TS2769: No overload matches this call.
+  Overload 1 of 2, '(o: { [s: string]: any; } | ArrayLike<any>): [string, any][]', gave the following error.
+    Argument of type 'any[] | undefined' is not assignable to parameter of type '{ [s: string]: any; } | ArrayLike<any>'.
+      Type 'undefined' is not assignable to type '{ [s: string]: any; } | ArrayLike<any>'.
+  Overload 2 of 2, '(o: {}): [string, any][]', gave the following error.
+    Argument of type 'any[] | undefined' is not assignable to parameter of type '{}'.
+      Type 'undefined' is not assignable to type '{}'.
+src/hydraulics/test.ts(66,45): error TS2769: No overload matches this call.
+  Overload 1 of 2, '(o: { [s: string]: any; } | ArrayLike<any>): [string, any][]', gave the following error.
+    Argument of type 'Record<string, any> | undefined' is not assignable to parameter of type '{ [s: string]: any; } | ArrayLike<any>'.
+      Type 'undefined' is not assignable to type '{ [s: string]: any; } | ArrayLike<any>'.
+  Overload 2 of 2, '(o: {}): [string, any][]', gave the following error.
+    Argument of type 'Record<string, any> | undefined' is not assignable to parameter of type '{}'.
+      Type 'undefined' is not assignable to type '{}'.
+src/scripts/verify_air_valve.ts(75,5): error TS2353: Object literal may only specify known properties, and 'hasAirValve' does not exist in type 'PressureJunction'.
+src/scripts/verify_air_valve.ts(86,5): error TS2353: Object literal may only specify known properties, and 'hasAirValve' does not exist in type 'PressureJunction'.
+src/scripts/verify_air_valve.ts(96,5): error TS2353: Object literal may only specify known properties, and 'hasAirValve' does not exist in type 'PressureJunction'.
+src/scripts/verify_air_valve.ts(123,27): error TS2339: Property 'airState' does not exist on type 'PressureJunction'.
+src/tests/repro_pressure_issue.ts(50,14): error TS7006: Parameter 'msg' implicitly has an 'any' type.
+src/tests/test_air_valves.ts(2,27): error TS2459: Module '"../hydraulics/airValveModule"' declares 'AirValveRecommendation' locally, but it is not exported.
+src/tests/test_air_valves.ts(8,5): error TS2741: Property 'chainage' is missing in type '{ location: string; elevation: number; head: number; pressure: number; }' but required in type 'PressurePoint'.
+src/tests/test_air_valves.ts(11,5): error TS2741: Property 'chainage' is missing in type '{ location: string; elevation: number; head: number; pressure: number; }' but required in type 'PressurePoint'.
+src/tests/test_air_valves.ts(12,5): error TS2741: Property 'chainage' is missing in type '{ location: string; elevation: number; head: number; pressure: number; }' but required in type 'PressurePoint'.
+src/tests/test_air_valves.ts(13,5): error TS2741: Property 'chainage' is missing in type '{ location: string; elevation: number; head: number; pressure: number; }' but required in type 'PressurePoint'.
+src/tests/test_air_valves.ts(16,5): error TS2741: Property 'chainage' is missing in type '{ location: string; elevation: number; head: number; pressure: number; }' but required in type 'PressurePoint'.
+src/tests/test_air_valves.ts(17,5): error TS2741: Property 'chainage' is missing in type '{ location: string; elevation: number; head: number; pressure: number; }' but required in type 'PressurePoint'.
+src/tests/test_air_valves.ts(18,5): error TS2741: Property 'chainage' is missing in type '{ location: string; elevation: number; head: number; pressure: number; }' but required in type 'PressurePoint'.
+src/tests/test_air_valves.ts(21,5): error TS2741: Property 'chainage' is missing in type '{ location: string; elevation: number; head: number; pressure: number; }' but required in type 'PressurePoint'.
+src/tests/test_geometry.ts(64,32): error TS2345: Argument of type '(Chamber | { CT: { value: number; origin: string; }; id: string; userDefinedId: string; x: number; y: number; H: AttributeValue; Cre: AttributeValue; ... 11 more ...; uehInputMethod?: "manual" | ... 1 more ... | undefined; })[]' is not assignable to parameter of type 'Chamber[]'.
+  Type 'Chamber | { CT: { value: number; origin: string; }; id: string; userDefinedId: string; x: number; y: number; H: AttributeValue; Cre: AttributeValue; ... 11 more ...; uehInputMethod?: "manual" | ... 1 more ... | undefined; }' is not assignable to type 'Chamber'.
+    Type '{ CT: { value: number; origin: string; }; id: string; userDefinedId: string; x: number; y: number; H: AttributeValue; Cre: AttributeValue; ... 11 more ...; uehInputMethod?: "manual" | "artifact"; }' is not assignable to type 'Chamber'.
+      The types of 'CT.origin' are incompatible between these types.
+        Type 'string' is not assignable to type '"calculated" | "manual"'.
+src/tests/test_pressure_hydraulics.ts(15,47): error TS2305: Module '"../hydraulics/pumpModule"' has no exported member 'createSystemCurve'.
+src/tests/test_pressure_hydraulics.ts(143,24): error TS2554: Expected 6-8 arguments, but got 5.

@@ -1,0 +1,24 @@
+{
+    "compilerOptions": {
+        "target": "ESNext",
+        "module": "CommonJS",
+        "moduleResolution": "node",
+        "esModuleInterop": true,
+        "skipLibCheck": true,
+        "forceConsistentCasingInFileNames": true,
+        "outDir": "./dist-verify-air",
+        "rootDir": "./src"
+    },
+    "files": [
+        "src/scripts/verify_profile.ts",
+        "src/scripts/verify_air_valve.ts",
+        "src/hydraulics/pressureEngine.ts",
+        "src/hydraulics/types.ts",
+        "src/hydraulics/lossModule.ts",
+        "src/hydraulics/pumpModule.ts",
+        "src/hydraulics/pressureModule.ts",
+        "src/hydraulics/surgeModule.ts",
+        "src/hydraulics/airValveModule.ts",
+        "src/hydraulics/pumpHeadEngine.ts"
+    ]
+}
