@@ -1,0 +1,49 @@
+{
+  "contexto": "NCh3371",
+  "objetivo": "Normalizar etiquetas normativas y evitar mezcla de métodos",
+  "reglas_etiquetado": [
+    {
+      "id": "ETQ-MET-UEH",
+      "cuando": {
+        "metodo_dimensionamiento": "UEH"
+      },
+      "etiquetas": {
+        "metodo": "NCh 3371 – Método tradicional (UEH)",
+        "resultado": "Apto hidráulicamente",
+        "referencia": "NCh 3371"
+      }
+    },
+    {
+      "id": "ETQ-HID-MANNING",
+      "cuando": {
+        "verificacion_hidraulica": "Manning",
+        "metodo_dimensionamiento": "UEH"
+      },
+      "etiquetas": {
+        "verificacion": "Chequeo hidráulico (Manning)",
+        "nota": "Verificación complementaria, no método de dimensionamiento"
+      }
+    },
+    {
+      "id": "ETQ-NO-ANEXO-B",
+      "cuando": {
+        "metodo_dimensionamiento": "UEH"
+      },
+      "prohibir_etiquetas": [
+        "Anexo B NCh 3371",
+        "UNE-EN 12056-2"
+      ]
+    },
+    {
+      "id": "ETQ-MET-ANEXO-B",
+      "cuando": {
+        "metodo_dimensionamiento": "ANEXO_B"
+      },
+      "etiquetas": {
+        "metodo": "NCh 3371 – Anexo B (UNE-EN 12056-2)",
+        "resultado": "Dimensionamiento hidráulico conforme Anexo B",
+        "referencia": "NCh 3371 Anexo B"
+      }
+    }
+  ]
+}

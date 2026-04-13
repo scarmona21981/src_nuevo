@@ -1,0 +1,139 @@
+
+  "normative_modes": {
+    "DOMICILIARY": {
+      "code": "NCH_3371_RIDAA",
+      "description": "Instalación domiciliaria de alcantarillado",
+      "apply_rules": [
+        "UEH_CALCULATION",
+        "RIDAA_DIAMETERS",
+        "DOMICILIARY_CHAMBER_SPACING"
+      ],
+      "exclude_rules": [
+        "NCH1105_CHAMBER_MAX_DISTANCE"
+      ]
+    },
+    "PRIVATE_PUBLIC_STANDARD": {
+      "code": "NCH_1105",
+      "description": "Red privada con características de red pública",
+      "apply_rules": [
+        "NCH1105_CHAMBER_MAX_DISTANCE",
+        "NCH1105_HYDRAULIC_VERIFICATION",
+        "NCH1105_MIN_MAX_VELOCITY",
+        "NCH1105_FILLING_RATIO"
+      ]
+    },
+    "PUBLIC": {
+      "code": "NCH_1105",
+      "description": "Red pública de alcantarillado",
+      "apply_rules": [
+        "NCH1105_CHAMBER_MAX_DISTANCE",
+        "NCH1105_HYDRAULIC_VERIFICATION",
+        "NCH1105_MIN_MAX_VELOCITY",
+        "NCH1105_FILLING_RATIO"
+      ]
+    }
+  },
+
+  "rules": {
+    "NCH1105_CHAMBER_MAX_DISTANCE": {
+      "id": "R1105_001",
+      "description": "Distancia máxima entre cámaras de inspección según NCh 1105:2019",
+      "norm_reference": "NCh1105:2019, cláusula 7.1.2",
+      "scope": "PIPE_SECTION",
+      "conditions": [
+        {
+          "parameter": "normative_mode",
+          "operator": "IN",
+          "value": ["PRIVATE_PUBLIC_STANDARD", "PUBLIC"]
+        }
+      ],
+      "thresholds": [
+        {
+          "diameter_condition": "DN <= 500",
+          "max_distance_m": 120
+        },
+        {
+          "diameter_condition": "DN > 500",
+          "max_distance_m": 150
+        }
+      ],
+      "validation": {
+        "type": "WARNING",
+        "message": "La distancia entre cámaras supera el máximo establecido por la NCh 1105:2019 (cláusula 7.1.2)."
+      }
+    },
+
+    "NCH1105_MIN_MAX_VELOCITY": {
+      "id": "R1105_002",
+      "description": "Velocidad mínima y máxima en tuberías según NCh 1105",
+      "norm_reference": "NCh1105:2019, cláusula 6.8",
+      "scope": "PIPE_SECTION",
+      "limits": {
+        "min_velocity_m_s": 0.6,
+        "max_velocity_m_s": 3.0
+      },
+      "validation": {
+        "type": "ERROR",
+        "message": "La velocidad del flujo no cumple los límites establecidos por la NCh 1105."
+      }
+    },
+
+    "NCH1105_FILLING_RATIO": {
+      "id": "R1105_003",
+      "description": "Relación de llenado h/D según NCh 1105",
+      "norm_reference": "NCh1105:2019, cláusula 6.7",
+      "scope": "PIPE_SECTION",
+      "limits": {
+        "max_filling_ratio": 0.7,
+        "exceptional_max_filling_ratio": 0.8,
+        "min_filling_ratio": 0.3
+      },
+      "validation": {
+        "type": "ERROR",
+        "message": "La relación de llenado h/D no cumple los criterios de la NCh 1105."
+      }
+    },
+
+    "NCH1105_HYDRAULIC_VERIFICATION": {
+      "id": "R1105_004",
+      "description": "Verificación hidráulica general de tramos según NCh 1105",
+      "norm_reference": "NCh1105:2019",
+      "scope": "PIPE_SECTION",
+      "required_parameters": [
+        "diameter",
+        "slope",
+        "flow_rate",
+        "roughness_coefficient"
+      ],
+      "validation": {
+        "type": "ERROR",
+        "message": "Faltan parámetros para realizar la verificación hidráulica conforme a la NCh 1105."
+      }
+    }
+  },
+
+  "auto_suggestions": {
+    "suggest_public_standard": {
+      "description": "Sugerir NCh 1105 para redes privadas con características de red pública",
+      "conditions": [
+        {
+          "parameter": "diameter",
+          "operator": ">=",
+          "value": 200
+        },
+        {
+          "parameter": "connected_upstream_pipes",
+          "operator": ">=",
+          "value": 2
+        },
+        {
+          "parameter": "location",
+          "operator": "EQUALS",
+          "value": "EXTERIOR"
+        }
+      ],
+      "suggested_mode": "PRIVATE_PUBLIC_STANDARD",
+      "message": "Este tramo presenta características de red pública. Se sugiere verificar conforme a NCh 1105."
+    }
+  }
+}
