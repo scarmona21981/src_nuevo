@@ -1,0 +1,65 @@
+{
+  "norma": "NCh1105",
+  "version": "2019",
+  "tabla": "Tabla 1 - Pendientes mínimas",
+  "criterios": [
+    "tipo_tramo",
+    "tipo_pendiente"
+  ],
+  "datos": [
+    {
+      "diametro_dn_id": 175,
+      "tramo": "no_inicial",
+      "pendiente_min_recomendable": 0.005,
+      "pendiente_critica": 0.003
+    },
+    {
+      "diametro_dn_id": 200,
+      "tramo": "no_inicial",
+      "pendiente_min_recomendable": 0.005,
+      "pendiente_critica": 0.003
+    },
+    {
+      "diametro_dn_id": 250,
+      "tramo": "no_inicial",
+      "pendiente_min_recomendable": 0.004,
+      "pendiente_critica": 0.003
+    },
+    {
+      "diametro_dn_id": 300,
+      "tramo": "no_inicial",
+      "pendiente_min_recomendable": 0.003,
+      "pendiente_critica": 0.002
+    },
+    {
+      "diametro_dn_id": 350,
+      "tramo": "no_inicial",
+      "pendiente_min_recomendable": 0.003,
+      "pendiente_critica": 0.002
+    },
+    {
+      "diametro_dn_id": 400,
+      "tramo": "no_inicial",
+      "pendiente_min_recomendable": 0.003,
+      "pendiente_critica": 0.002
+    },
+    {
+      "diametro_dn_id": 500,
+      "tramo": "no_inicial",
+      "pendiente_min_recomendable": 0.003,
+      "pendiente_critica": 0.002
+    },
+    {
+      "diametro_dn_id": 175,
+      "tramo": "inicial",
+      "pendiente_min_recomendable": 0.01,
+      "pendiente_critica": 0.007
+    },
+    {
+      "diametro_dn_id": 200,
+      "tramo": "inicial",
+      "pendiente_min_recomendable": 0.01,
+      "pendiente_critica": 0.006
+    }
+  ]
+}

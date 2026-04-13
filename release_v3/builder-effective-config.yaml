@@ -1,0 +1,24 @@
+directories:
+  output: release_v3
+  buildResources: build
+appId: com.smcalc.alc
+productName: SMCALC ALC
+win:
+  icon: build/icon.ico
+  target: nsis
+nsis:
+  oneClick: false
+  perMachine: false
+  allowToChangeInstallationDirectory: true
+fileAssociations:
+  - ext: smal
+    name: SMCALC Project
+    description: Proyecto de Alcantarillado SMCALC
+    icon: build/icon.ico
+    role: Editor
+files:
+  - filter:
+      - dist-electron
+      - dist
+      - package.json
+electronVersion: 31.7.7

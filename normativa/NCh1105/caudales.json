@@ -1,0 +1,39 @@
+{
+  "norma": "NCh1105",
+  "version": "2019",
+  "modo_red": "publica",
+  "tipo_calculo": "caudal_continuo",
+  "reglas": [
+    {
+      "id": "NCH1105-QMD-AS",
+      "nombre": "Caudal medio diario de aguas servidas",
+      "requiere": [
+        "P",
+        "D",
+        "R",
+        "C"
+      ],
+      "calcula": {
+        "variable": "QmdAS",
+        "formula": "(P * D * R * C) / 86400",
+        "unidad": "L/s"
+      }
+    },
+    {
+      "id": "NCH1105-QMAX-HARMON",
+      "nombre": "Caudal máximo horario (Harmon)",
+      "condicion": {
+        "P_min": 1000
+      },
+      "requiere": [
+        "QmdAS",
+        "P"
+      ],
+      "calcula": {
+        "variable": "QmaxAS",
+        "formula": "QmdAS * (1 + (14 / (4 + sqrt(P / 1000))))",
+        "unidad": "L/s"
+      }
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "norma": "NCh1105",
+  "version": "2019",
+  "tabla": "Capacidad hidráulica referencial",
+  "nota": "Capacidades deben evaluarse siempre junto a pendiente crítica o recomendable",
+  "datos": [
+    {
+      "diametro_dn_id": 175,
+      "pendiente": 0.005,
+      "Qmax_Ls": 45
+    },
+    {
+      "diametro_dn_id": 175,
+      "pendiente": 0.003,
+      "Qmax_Ls": 38
+    },
+    {
+      "diametro_dn_id": 200,
+      "pendiente": 0.005,
+      "Qmax_Ls": 70
+    },
+    {
+      "diametro_dn_id": 200,
+      "pendiente": 0.003,
+      "Qmax_Ls": 60
+    },
+    {
+      "diametro_dn_id": 250,
+      "pendiente": 0.004,
+      "Qmax_Ls": 120
+    },
+    {
+      "diametro_dn_id": 250,
+      "pendiente": 0.003,
+      "Qmax_Ls": 105
+    },
+    {
+      "diametro_dn_id": 300,
+      "pendiente": 0.003,
+      "Qmax_Ls": 200
+    },
+    {
+      "diametro_dn_id": 300,
+      "pendiente": 0.002,
+      "Qmax_Ls": 170
+    },
+    {
+      "diametro_dn_id": 350,
+      "pendiente": 0.003,
+      "Qmax_Ls": 260
+    },
+    {
+      "diametro_dn_id": 350,
+      "pendiente": 0.002,
+      "Qmax_Ls": 220
+    },
+    {
+      "diametro_dn_id": 400,
+      "pendiente": 0.003,
+      "Qmax_Ls": 330
+    },
+    {
+      "diametro_dn_id": 400,
+      "pendiente": 0.002,
+      "Qmax_Ls": 280
+    },
+    {
+      "diametro_dn_id": 500,
+      "pendiente": 0.003,
+      "Qmax_Ls": 500
+    },
+    {
+      "diametro_dn_id": 500,
+      "pendiente": 0.002,
+      "Qmax_Ls": 430
+    }
+  ]
+}

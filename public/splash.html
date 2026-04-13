@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cargando SMCALC_ALC...</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #e8f5e9;
+            /* Soft green */
+            color: #2e7d32;
+            /* Darker green for text */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            user-select: none;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+
+        .container {
+            text-align: center;
+            width: 80%;
+            max-width: 400px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* Center horizontally */
+            justify-content: center;
+            /* Center vertically */
+        }
+
+        .logo {
+            width: 150px;
+            /* Slight increase for main visual element */
+            height: auto;
+            margin-bottom: 30px;
+            /* No filters, no shadows, no animations as requested */
+        }
+
+        .version {
+            font-size: 14px;
+            color: #4caf50;
+            margin-top: 20px;
+            font-weight: 500;
+        }
+
+        .progress-container {
+            background-color: #c8e6c9;
+            /* Light green track */
+            border-radius: 4px;
+            height: 4px;
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+            margin-top: 20px;
+        }
+
+        .progress-bar {
+            background-color: #4caf50;
+            /* Green progress */
+            height: 100%;
+            width: 0%;
+            border-radius: 4px;
+            transition: width 0.3s ease-out;
+        }
+
+        /* Removed status text as it wasn't explicitly requested in the new strict requirements, 
+           but if needed it can be re-added. The user asked for "Version {{YEAR}}" at bottom. */
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img src="logo.png" alt="SMCALC_ALC Logo" class="logo">
+
+        <div class="progress-container">
+            <div id="progress-bar" class="progress-bar"></div>
+        </div>
+
+        <div id="version-text" class="version">v.0.1.0 (beta)</div>
+    </div>
+
+    <script>
+        const progressBar = document.getElementById('progress-bar');
+
+        // Listen for progress updates from main process
+        if (window.electronAPI) {
+            window.electronAPI.onLoadingProgress((event, { progress, message }) => {
+                progressBar.style.width = `${progress}%`;
+                // Optional: We could show the message if we added back a status text element
+            });
+        }
+    </script>
+</body>
+
+</html>

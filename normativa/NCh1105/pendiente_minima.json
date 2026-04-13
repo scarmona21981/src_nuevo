@@ -1,0 +1,25 @@
+{
+  "norma": "NCh 1105",
+  "seccion": "8",
+  "titulo": "Diámetros de tuberías",
+  "articulo": "8.1",
+  "regla": {
+    "ambito": [
+      "tuberias laterales",
+      "canerias"
+    ],
+    "diametro_nominal_minimo_mm": 200,
+    "excepciones": {
+      "condiciones": [
+        "pasajes",
+        "calles sin posibilidades de conexion futura",
+        "tramos cuya suma no supera 200 m"
+      ],
+      "diametro_nominal_permitido_mm": 175,
+      "materiales": [
+        "hormigon simple",
+        "material equivalente"
+      ]
+    }
+  }
+}
